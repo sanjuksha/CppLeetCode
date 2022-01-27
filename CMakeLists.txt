@@ -4,3 +4,5 @@ project(CppLeetCode)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(runBuySellCode BestTimetoBuyAndSell.cpp)
+
+add_executable(runTwoSum TwoSum.cpp)
