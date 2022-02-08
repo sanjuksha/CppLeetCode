@@ -8,3 +8,5 @@ add_executable(runBuySellCode BestTimetoBuyAndSell.cpp)
 add_executable(runTwoSum TwoSum.cpp)
 
 add_executable(runContainsDuplicate ContainsDuplicate.cpp)
+
+add_executable(runSameTree SameTree.cpp)
