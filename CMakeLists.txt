@@ -12,3 +12,5 @@ add_executable(runContainsDuplicate ContainsDuplicate.cpp)
 add_executable(runSameTree SameTree.cpp)
 
 add_executable(runSubtreeOfAnotherTree SubTreeOfAnotherTree.cpp)
+
+add_executable(runInvertBinaryTree InvertBinaryTree.cpp)
