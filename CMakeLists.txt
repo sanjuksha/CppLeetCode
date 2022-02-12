@@ -14,3 +14,5 @@ add_executable(runSameTree SameTree.cpp)
 add_executable(runSubtreeOfAnotherTree SubTreeOfAnotherTree.cpp)
 
 add_executable(runInvertBinaryTree InvertBinaryTree.cpp)
+
+add_executable(runClimbingStairs ClimbingStairs.cpp)
