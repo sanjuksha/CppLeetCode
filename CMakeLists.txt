@@ -16,3 +16,5 @@ add_executable(runSubtreeOfAnotherTree SubTreeOfAnotherTree.cpp)
 add_executable(runInvertBinaryTree InvertBinaryTree.cpp)
 
 add_executable(runClimbingStairs ClimbingStairs.cpp)
+
+add_executable(runValidAnagram ValidAnagram.cpp)
