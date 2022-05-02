@@ -18,3 +18,12 @@ add_executable(runInvertBinaryTree InvertBinaryTree.cpp)
 add_executable(runClimbingStairs ClimbingStairs.cpp)
 
 add_executable(runValidAnagram ValidAnagram.cpp)
+
+add_executable(runRotateImage RotateImage.cpp)
+
+add_executable(runMatrixSum MatrixSum.cpp)
+
+add_executable(runSetMatrixZero SetMatrixZero.cpp)
+
+add_executable(runValidPalindrome ValidPalindrome.cpp)
+
