@@ -27,3 +27,6 @@ add_executable(runSetMatrixZero SetMatrixZero.cpp)
 
 add_executable(runValidPalindrome ValidPalindrome.cpp)
 
+add_executable(runTopkFrequentElements TopkFrequentElements.cpp)
+
+add_executable(runValidParanthesis ValidParantheses.cpp)
