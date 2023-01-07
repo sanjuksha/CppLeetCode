@@ -13,7 +13,7 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
-///\class Solution InverTree
+///\class Solution InvertTree
 ///\brief Given the root of a binary tree, invert the tree, and return its root.
 class Solution {
 public:

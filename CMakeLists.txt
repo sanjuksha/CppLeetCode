@@ -30,3 +30,9 @@ add_executable(runValidPalindrome ValidPalindrome.cpp)
 add_executable(runTopkFrequentElements TopkFrequentElements.cpp)
 
 add_executable(runValidParanthesis ValidParantheses.cpp)
+
+add_executable(runNumberOf1Bits NumberOf1Bits.cpp)
+
+add_executable(runReverseBits ReverseBits.cpp)
+
+add_executable(runMissingNumbers MissingNumbers.cpp)
