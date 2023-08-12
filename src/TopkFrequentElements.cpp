@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include "VectorPrinter.cpp"
 
 using namespace std;
 
@@ -60,19 +61,6 @@ public:
         return res;
     }
 
-    void printIntVector(std::vector<int>& vector)
-    {
-        std::cout<<"[ ";
-        for(int i = 0; i < vector.size(); i++)
-        {
-            std::cout<<vector[i];
-            if(i != vector.size() -1)
-            {
-                std::cout<<", ";
-            }
-        }
-        std::cout<<" ]"<<std::endl;
-    }
 };
 
 int main()
@@ -84,11 +72,13 @@ int main()
     inputArray = {1,1,1,2,2,3,3,3};
     int k =  3;
 
+    
+
     Solution solution;
     std::vector<int> result;
 
     result = solution.topKFrequent(inputArray, k);
-    solution.printIntVector(result);
-
+    VectorPrinter vectorPrinter(result);
+    vectorPrinter.print();
 
 }
