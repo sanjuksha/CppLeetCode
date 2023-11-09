@@ -25,6 +25,7 @@ public:
 int main()
 {
     // Number of Steps to climb
+    std::cout<<"Leetcode 70: Climbing Stairs"<<std::endl;
     int n;
     std::cout<<"Enter number of steps to climb: ";
     std::cin>>n;
