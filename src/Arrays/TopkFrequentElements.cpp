@@ -1,3 +1,23 @@
+/**
+ * @file TopkFrequentElements.cpp
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2024-01-29
+ * 
+ * Given an integer array nums and an integer k, 
+ * return the k most frequent elements. You may return the answer in any order.
+ * 
+ * Example 1:
+ * Input: nums = [1,1,1,2,2,3], k = 2
+ * Output: [1,2]
+ * 
+ * Example 2:
+ * Input: nums = [1], k = 1
+ * Output: [1]
+ */
+
+
 #include <iostream>
 #include <vector>
 #include <map>
@@ -33,9 +53,6 @@ public:
 
         }
 
-       
-//        std::map<int, int>::iterator it;
-
          // Make a Frequency  map (number of occurences, value vector) using the count map
         for (auto& it : count)
         {
@@ -52,16 +69,17 @@ public:
             }
         }
 
-        // Iterate backwards to find the top frquently occuring numbers
+        // Iterate backwards to find the top frequently occuring numbers
         for(int i = sizeof(freq); i > 0; i--)
         {
             // for every element in the vector of that frequency
             for(auto const& a : freq[i])
             {
-                if(res.size() != k)
+                if(res.size() == k)
                 {
-                    res.push_back(a);
+                    break;
                 }
+                res.push_back(a);
             }
         }
         return res;
@@ -76,7 +94,7 @@ int main()
     std::vector<int> inputArray;
 
     inputArray = {1,1,1,2,2,3,3,3};
-    int k =  3;
+    int k =  2;
 
     
 

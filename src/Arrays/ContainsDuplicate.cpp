@@ -1,3 +1,16 @@
+/**
+ * @file ContainsDuplicate.cpp
+ * @author Sanjuksha Nirgude
+ * 
+ * LeetCode 217: Contains Duplicate 
+ * 
+ * @brief Given an integer array nums,
+ * return true if any value appears at least twice
+ * in the array, and return false if every element 
+ * is distinct.
+ * 
+ */
+
 #include <iostream>
 #include <vector>
 #include <regex>

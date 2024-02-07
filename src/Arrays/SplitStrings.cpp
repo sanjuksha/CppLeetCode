@@ -1,6 +1,3 @@
-#include <iostream>
-#include <vector>
-//TODO: Not solving all cases
 /*
     Given an array of strings words and a character separator, split each string in words by separator.
 
@@ -19,6 +16,8 @@
     Output: ["one","two","three","four","five","six"]
     Explanation: In this example we split as follows:
 */
+#include <iostream>
+#include <vector>
 
 class Solution
 {
@@ -33,7 +32,10 @@ public:
 
             while( end != std::string::npos) 
             {
-                result.emplace_back(word.substr(start, end-start));
+                if(end != 0 && word.substr(start, end-start).size() != 0)
+                {
+                    result.emplace_back(word.substr(start, end-start));
+                }
                 start = end + 1;
                 end = word.find(separator, start);
             }
@@ -55,6 +57,12 @@ int main()
     std::cout<<"Leetcode 2788. Split strings by separator"<<std::endl;
     std::vector<std::string> words = {"one.two.three", "four.five", "six"};
     char separator = '.';
+    //Other examples
+    // std::vector<std::string> words = {"$easy$","$problem$"};
+    // char separator = '$';
+    // std::vector<std::string> words = {"|||"};
+    // char separator = '|';
+
     Solution solution;
     std::vector<std::string> result = solution.splitStrings(words, separator);
 
