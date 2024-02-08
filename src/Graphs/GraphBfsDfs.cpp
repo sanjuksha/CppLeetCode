@@ -1,3 +1,12 @@
+/**
+ * @file GraphBfsDfs.cpp
+ * @author Sanjuksha Nirgude
+ * @brief These are generic representation of BFS and DFS
+ * traversal of a simple graph in C++. This is not a LeetCode problem.
+ * @date 2024-02-07
+ * 
+ */
+
 #include <iostream>
 #include <list>
 #include <vector>
