@@ -1,3 +1,16 @@
+/**
+ * @file SubTreeOfAnotherTree.cpp
+ * @author Sanjuksha Nirgude
+ * @brief Given the roots of two binary trees root and subRoot,
+ * return true if there is a subtree of root with the same 
+ * structure and node values of subRoot and false otherwise.
+ * A subtree of a binary tree tree is a tree that consists 
+ * of a node in tree and all of this node's descendants.
+ * The tree tree could also be considered as a subtree of itself.
+ * 
+ * @date 2024-02-07
+ * 
+ */
 #include <iostream>
 #include <vector>
 #include <sstream>
@@ -23,12 +36,12 @@ class Solution {
 public:
     bool isSubtree(TreeNode* root, TreeNode* subRoot)
     {
-        if(!subRoot)
+        if(!subRoot) // subroot is empty so it's definitely subtree
             return true;
-        if(!root)
+        if(!root) // root tree doesn't exists so can't have subtree
             return false;
 
-        if(isSameTree(root,subRoot))
+        if(isSameTree(root,subRoot)) // If they both are same tree then true
             return true;
 
         return (isSubtree(root->left, subRoot) ||
